@@ -5,7 +5,7 @@ const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/cycle',{
+        fetch('https://boiling-headland-35845.herokuapp.com/cycle',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

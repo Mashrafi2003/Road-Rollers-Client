@@ -16,7 +16,7 @@ const AllOrders = () => {
     const {user} = useAuth()
 
     useEffect(()=>{
-        fetch('http://localhost:5000/orders')
+        fetch('https://boiling-headland-35845.herokuapp.com/orders')
         .then(res=>res.json())
         .then(data=>setOrders(data));
     },[])
@@ -25,7 +25,7 @@ const AllOrders = () => {
     
         const proceed = window.confirm('Are You Sure You Want to Delete?')
         if(proceed){
-            const url =  `http://localhost:5000/orders/${id}`
+            const url =  `https://boiling-headland-35845.herokuapp.com/orders/${id}`
             fetch(url,{
                 method:"DELETE"
             })

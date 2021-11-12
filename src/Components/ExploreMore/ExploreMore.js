@@ -11,7 +11,7 @@ const ExploreMore = () => {
     const [cycles , setCycles] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/cycle')
+        fetch('https://boiling-headland-35845.herokuapp.com/cycle')
         .then(res=>res.json())
         .then(data=>setCycles(data))
     },[])

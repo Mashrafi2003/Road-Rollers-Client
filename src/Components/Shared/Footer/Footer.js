@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
       <div class="bottom">
         <center>
-          <span class="credit">Website By <a href="https://www.codingnepalweb.com">Travel Guru</a> | </span>
+          <span class="credit">Website By <a href="https://www.codingnepalweb.com">Road Roller</a> | </span>
           <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
         </center>
       </div>

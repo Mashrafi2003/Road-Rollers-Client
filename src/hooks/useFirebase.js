@@ -124,7 +124,7 @@ const useFirebase = () => {
     },[])
 
     useEffect(()=>{
-      fetch(`http://localhost:5000/users/${user.email}`)
+      fetch(`https://boiling-headland-35845.herokuapp.com/users/${user.email}`)
       .then(res=>res.json())
       .then(data=>setAdmin(data))
     },[user?.email])
@@ -132,7 +132,7 @@ const useFirebase = () => {
     // Saving Resgiter Data From UI on The Database
     const saveUser = (email , displayName)=>{
       const user = {email , displayName};
-      fetch('http://localhost:5000/users',{
+      fetch('https://boiling-headland-35845.herokuapp.com/users',{
         method:'POST',
         headers:{
           'content-type':'application/json'

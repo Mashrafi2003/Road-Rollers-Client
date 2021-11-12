@@ -18,7 +18,7 @@ const Purchase = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/orders',{
+        fetch('https://boiling-headland-35845.herokuapp.com/orders',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'
@@ -37,7 +37,7 @@ const Purchase = () => {
     const [cycles , setCycles] = useState({})
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/cycle/${id}`)
+        fetch(`https://boiling-headland-35845.herokuapp.com/cycle/${id}`)
         .then(res=>res.json())
         .then(data=>setCycles(data))
     },[])
