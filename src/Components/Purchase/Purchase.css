@@ -1,0 +1,13 @@
+.submit-service{
+    background-color:rgba(50, 229, 235, 0.637);
+}
+.form-service{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-service input,textarea{
+    padding: 5px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
