@@ -4,6 +4,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Shared/Footer/Footer';
 import Navigation from '../Shared/Navigation/Navigation';
 
 const ExploreMore = () => {
@@ -57,6 +58,7 @@ const ExploreMore = () => {
          
           
         </Grid>
+        <Footer/>
         </Box>
     );
 };
