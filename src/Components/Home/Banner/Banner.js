@@ -16,7 +16,7 @@ const Banner = () => {
         <Typography variant="subtitle1" component="div" gutterBottom>
         Cycling, also called bicycling or biking, is the use of bicycles for transport, recreation, exercise or sport. ... They are the principal means of transportation in many parts of the world. Cycling is widely regarded as an effective and efficient mode of transportation optimal for short to moderate distances.
       </Typography>
-      <Link to='/login'>
+      <Link style={{textDecoration:'none', color:'white'}} to='/login'>
       <Button variant='contained'>Join Now</Button>
       </Link>
             

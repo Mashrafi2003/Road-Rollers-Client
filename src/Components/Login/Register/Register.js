@@ -39,7 +39,7 @@ const Register = () => {
                             onBlur={handleOnBlur}
                             variant="standard" />
                         <TextField
-                            sx={{ width: '75%', m: 1 }}
+                            sx={{ width: '75%', m: 1 }} 
                             id="standard-basic"
                             label="Your Email"
                             name="email"
@@ -66,7 +66,7 @@ const Register = () => {
                         <Button sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
                         <NavLink
                             style={{ textDecoration: 'none' }}
-                            to="/login">
+                            style={{textDecoration:'none', color:'white'}} to="/login">
                             <Button variant="text">Already Registered? Please Login</Button>
                         </NavLink>
                     </form>}
